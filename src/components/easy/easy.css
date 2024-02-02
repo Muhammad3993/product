@@ -1,0 +1,123 @@
+.easy{
+    background-image: url(../../assets/images/easy-img/bg.png);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 200px;
+}
+.easy__title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.sub__title{
+    width: 600px;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+.easy__main__subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 10px;   
+}
+.easy__main__title{
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* =====Easy___interst====== */
+.line1{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+.interest__desription{
+    box-shadow: var(--box-shadow);
+    padding: 13px 25px;
+    border-radius: 25px;
+    color: var(--blk);
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+.interest__img{
+    width: 90px;
+    height: 90px;
+}
+.line1{
+    margin-bottom: 30px;
+    display: flex;
+    flex: 1;
+}
+.easy__interest{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* btn_easy */
+.easy__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.easy__btn a{
+    background-color: var(--green);
+    width: 20%;
+    height: 50px;
+    border-radius: 4px;
+    display: flex;
+    color: var(--wht);
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: .3px;
+}
+
+
+
+/* ====break for normal device===== */
+@media screen and (max-width: 768px) {
+    .easy{
+        padding: 20px;
+    }
+    .easy__btn a{   
+        width: 100%;
+    }
+    .easy__interest{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* break for small device */
+@media screen and (max-width: 350px) {
+    .easy__main__title h1{
+        font-size: 20px;
+    }
+    .sub__title{
+        font-size: 14px;
+    }
+    .easy{
+        padding: 10px;
+    }
+    .line1{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        row-gap: 10px;
+    }
+    .revers{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .easy__btn{
+        margin-top: 10px;
+    }
+}

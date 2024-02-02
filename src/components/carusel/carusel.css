@@ -1,0 +1,64 @@
+.main_title h1{
+    color: var(--title-color);
+}
+.carusel{
+    margin-top: 200px;
+}
+.carusel__subtitle p{
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+.carusel__title{
+    margin-bottom: 25px;
+}
+
+/* swipper-part */
+
+.swipper__main__img{
+    width: 342px;
+    height: 170px;
+}
+.swipper__main__img img{
+    width: 100%;
+    height: 100%;
+}
+.swipper__1{
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    width: 81%;
+}
+.swipper__bottom{
+    padding: 23px 20px;
+}
+.swipper__bottom__subtitle p {
+    color: var(--title-color);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.swipper__bottom__title h3{
+    color: var(--title-color);
+    font-size: 20px;
+    transition: .3s;
+}
+.swipper__bottom__title h3:hover{
+    color: var(--aqua);
+}
+.mySwiper{
+    height: 400px;
+}
+
+/* break for normal device */
+@media screen and (max-width: 768px) {
+    .carusel{
+        margin-top: 330px;
+    }
+}
+
+/* break for small device */
+@media screen and (max-width: 768px) {
+    .carusel{
+        margin-bottom: 30px;
+    }
+    }

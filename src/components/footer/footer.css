@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+
+.footer-texts{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.footer-header h1{
+    font-size: 20px;
+}
+
+.footer-texts p{
+    margin-top: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-signup-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputstyle{
+    width: 325px;
+    height: 48px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--footer-input-border);
+    background: var(--footer-input-bg);
+    outline: none;
+    padding: 10px;
+}
+
+.btn-style{
+    width: 131px;
+    height: 39px;
+    border: none;
+    outline: none;
+    background: var(--footer-button-bg);
+    border-radius: 4px;
+    color: var(--footer-input-bg);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-style:hover{
+    color: var(--footer-button-bg);
+    background: var(--footer-input-bg);
+    border: 1px solid    var(--footer-button-bg);
+
+}
+
+.footer-media{
+    display: flex;
+    padding-top: 30px;
+}
+
+.footer-media a{
+    text-decoration: none;
+    color: var(--footer-button-bg);
+
+}
+
+.footer-media-icons{
+    font-size: 20px;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--footer-media-bg);
+    padding-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .7s ease; 
+}
+
+.footer-media-icons:hover{
+    transform: rotate(360deg)
+}
+
+.footer-copyright-section{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.footer-text1{
+    grid-area: foot-1;
+}
+
+.footer-text2{
+    grid-area: foot-2;
+}
+
+.footer-text3{
+    grid-area: foot-3;
+}
+
+.footer-text4{
+    grid-area: foot-4;
+}
+
+
+@media(max-width: 768px){
+    
+    .footer-texts{
+        display: grid;
+        grid-template-areas:    
+        "foot-1 foot-1"
+        "foot-2 foot-3"
+        "foot-4 foot-4"
+        ;
+    }
+
+    .footer-text1 {
+        text-align: center;
+    }
+
+    .footer-text2{
+        padding-left: 100px;
+    }
+    .footer-text3{
+        padding-right: 80px;
+        padding-bottom: 30px;
+    }
+
+    .footer-text4{
+        text-align: center;
+    }
+
+    .footer-signup-section{
+        padding-left: 90px;
+    }
+
+    .btn-style{
+        margin-left: 90px;
+    }
+
+    .footer-media{
+        padding-left: 150px;
+        padding-bottom: 20px;
+    }
+    
+}
+

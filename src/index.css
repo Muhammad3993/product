@@ -1,0 +1,64 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+    padding: 0 10px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--white);
+    color: var(--main);
+    transition: 1s;
+}
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+    background: var(--wht);
+}
+html::-webkit-scrollbar-thumb{
+    width: 10px;
+    background: var(--aqua);
+    border-radius: 10px;
+}
+/* roots */
+:root{
+    --wht: #fff;
+    --title-color: #22343D;
+    --box-shadow: 0px 2px 15px 0px #173A561A;
+    --blk: #2F281E;
+    --green:#02897A;
+    --grey: #DEDEDE;
+    --aqua: #02897A;
+    --grey2: #AFAFAF;
+    --main: #000;
+    --white: #fff;
+    --blue: #173A56;
+    --green1:#02897A;
+    --rgba: rgba(0, 0, 0, .8);
+    --footer-input-border: #BCD0E5;
+    --footer-input-bg: #FFFFFF;
+    --footer-button-bg: #02897A;
+    --footer-media-bg:#EDFFFC;
+}
+button{
+    border: none;
+    outline: none;
+}
+.dark{
+    --main: #fff;
+    --white: #191c20;
+}
